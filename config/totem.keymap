@@ -26,9 +26,9 @@
         Mouse {
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &trans            &trans    &trans   &trans     &trans
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &mmv MOVE_LEFT    &kp DOWN  &kp UP   &kp RIGHT  &trans
-&trans  &trans    &kp LALT  &trans     &trans     &trans    &mwh SCROLL_LEFT  &trans    &trans   &trans     &trans  &trans
-                            &trans     &trans     &trans    &mkp LCLK         &kp BSPC  &kp DEL
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &trans
+&trans  &trans    &kp LALT  &trans     &trans     &trans    &mwh SCROLL_LEFT  &mwh SCROLL_DOWN    &mwh SCROLL_UP   &mwh SCROLL_RIGHT     &trans  &trans
+                            &trans     &trans     &trans    &mkp LCLK         &mkp MCLK  &mkp RCLK
             >;
         };
 
