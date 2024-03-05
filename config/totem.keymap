@@ -1,7 +1,8 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     keymap {
@@ -9,10 +10,10 @@
 
         Base {
             bindings = <
-           &kp Q         &kp W           &kp E        &kp R       &kp T      &kp Y    &kp U         &kp I        &kp O             &kp P
-           &mt LSHIFT A  &mt LEFT_ALT S  &mt LCTRL D  &mt LGUI F  &kp G      &kp H    &mt RSHIFT J  &mt RCTRL K  &mt LEFT_ALT L    &mt RGUI SEMI
-&kp LSHFT  &kp Z         &mt LEFT_ALT X  &kp C        &kp V       &kp B      &kp N    &kp M         &kp COMMA    &mt LEFT_ALT DOT  &kp FSLH       &kp LSHFT
-                                         &lt 3 ESC    &lt 1 SPACE   &lt 2 TAB    &lt 5 RET  &lt 4 BSPC      &lt 6 DEL
+           &kp Q         &kp W           &kp E        &kp R        &kp T        &kp Y      &kp U         &kp I        &kp O             &kp P
+           &mt LSHIFT A  &mt LEFT_ALT S  &mt LCTRL D  &mt LGUI F   &kp G        &kp H      &mt RSHIFT J  &mt RCTRL K  &mt LEFT_ALT L    &mt RGUI SEMI
+&kp LSHFT  &kp Z         &mt LEFT_ALT X  &kp C        &kp V        &kp B        &kp N      &kp M         &kp COMMA    &mt LEFT_ALT DOT  &kp FSLH       &kp LSHFT
+                                         &lt 3 ESC    &lt 1 SPACE  &lt 2 TAB    &lt 5 RET  &lt 4 BSPC    &lt 6 DEL
             >;
         };
 
@@ -25,12 +26,12 @@
             >;
         };
 
-        Mouse {
+        Settings {
             bindings = <
-       &none     &none     &none      &none      &none    &none             &none             &none           &none              &none
-       &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none    &none    &none    &none    &none
-&none  &none     &kp LALT  &none      &none      &none    &none  &none  &none  &none  &none  &none
-                           &none      &none      &none    &none         &none         &none
+            &none     &none     &none      &none      &none    &out OUT_BLE  &out OUT_USB  &none  &none  &none
+            &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &bt BT_SEL 0  &none         &none  &none  &none
+&bt BT_CLR  &none     &kp LALT  &none      &none      &none    &none         &none         &none  &none  &none  &bt BT_CLR_ALL
+                                &none      &none      &none    &none         &none         &none
             >;
         };
 
