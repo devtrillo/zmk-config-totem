@@ -1,5 +1,7 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     flavor = "tap-preferred";
@@ -16,8 +18,8 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-    };
-/ {
+    },
+     {
     combos {
         compatible = "zmk,combos";
         combo_esc {
