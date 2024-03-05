@@ -35,9 +35,9 @@
         Media {
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans   &trans     &trans
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp C_PREV  &kp C_VOL_DOWN  &kp C_VOL_UP   &kp C_NEXT  &trans
 &trans  &trans    &kp LALT  &trans     &trans     &trans    &trans    &trans    &trans   &trans     &trans  &trans
-                            &trans     &trans     &trans    &kp RET   &kp BSPC  &kp DEL
+                            &trans     &trans     &trans    &kp C_PP   &trans  &trans
             >;
         };
     };
